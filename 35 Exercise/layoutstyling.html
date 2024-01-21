@@ -11,6 +11,17 @@
             padding: 0;
         }
 
+        body {
+            color: white;
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
         nav {
             background-color: grey;
         }
@@ -22,34 +33,45 @@
         }
 
         nav ul li {
-            padding: 20px;
+            padding: 25px;
             color: rgb(243, 255, 6);
+            font-size: 20px;
+            font-weight: 700;
         }
 
         .boxes {
             border: 2px solid purple;
             display: flex;
             justify-content: center;
-            margin: 5px;
+            background-color: burlywood;
         }
 
         .box {
             border: 2px solid rgb(128, 70, 0);
-            width: 30vw;
-            height: 30vw;
+            width: 40vw;
+            height: 40vw;
             margin: 30px;
         }
 
-        img {
-            width:40px
+        .box1 {
+            background-color: aqua;
         }
 
-        .image{
-            float: right;
-            margin-top: 20px;
-            margin-right: 20px;
+        .box2 {
+            background-color: rgb(149, 0, 255);
         }
-     
+
+        .stick {
+            border: 2px solid orange;
+            width: 20px;
+            height: 20px;
+            border-radius: 40px;
+            background-color: orange;
+            position: fixed;
+            right: 12px;
+            bottom: 12px;
+        }
+
         div h2 {
             border: 2px solid orangered;
             border-radius: 45px;
@@ -58,23 +80,22 @@
             text-align: center;
         }
 
-
         .foot {
             display: flex;
             list-style: none;
             background-color: rgb(141, 214, 226);
+            color: rgb(126, 11, 233);
             justify-content: space-evenly;
         }
 
         footer ul li {
-            padding: 10px;
+            padding: 20px;
         }
-
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <nav>
             <ul class="navi">
                 <li>Home</li>
@@ -82,30 +103,28 @@
                 <li>Contact</li>
             </ul>
         </nav>
+    </header>
 
-        <main>
-            <div class="boxes">
-                <div class="box box1"></div>
-                <div class="box box2"></div>
-            </div>
+    <main>
+        <div class="boxes">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+        </div>
 
-            <div class="image">
-                <img src="https://th.bing.com/th?id=OIP.6NS-B8gC4NRIQvf6IAglggHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="this is image">
-            </div>
+        <div class="sent">
+            <h2>Welcome to 5th exercise of the sigma web devlopment course</h2>
+        </div>
 
-            <div class="sent">
-                <h2>Welcome to 5th exercise of the sigma web devlopment course</h2>
-            </div>
-            
-        </main>
-        <footer>
-            <ul class="foot">
-                <li>&copy2024</li>
-                <li>terms and conditions</li>
-                <li>PvtLtd</li>
-            </ul>
-        </footer>
-    </div>
+        <div class="stick">
+        </div>
+    </main>
+    <footer>
+        <ul class="foot">
+            <li>&copy2024</li>
+            <li>terms and conditions</li>
+            <li>PvtLtd</li>
+        </ul>
+    </footer>
 </body>
 
 </html>
