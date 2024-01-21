@@ -1,0 +1,12 @@
+/* . to acess class  and # to access div */
+.red {
+    background-color: aqua;
+}
+
+.white {
+    color: rgb(221, 17, 17);
+}
+
+#firstdiv {
+    background-color: rgb(194, 164, 222);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        :root {
+            /* declaring global variables */
+            --color: rgb(241, 52, 52);
+            --secolor: rgb(239, 225, 225);
+            --brdr : rgb(22, 154, 237);
+            /* not only for colors but we can also use for declaring size*/
+            --defpad: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+            background-color: rgb(98, 95, 91);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            /* opacity: 0.7; */
+            list-style: none;
+            padding: 25px;
+        }
+
+        ul li:first-child {
+            --color: rgb(247, 129, 19);
+            background-color: var(--color);
+        }
+
+        ul li:nth-child(2) {
+            /* if variable is not declared then we can use option color */
+            background-color: var(--notdeclared , rgb(171, 169, 169));
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--secolor);
+            border: 3px solid var(--brdr);
+            padding: var(--defpad);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ipsum dolorum numquam quisquam non libero aut
+        corrupti? Minima fugit, ullam reiciendis doloremque culpa consequatur nobis nemo illum commodi ex error
+        excepturi fuga expedita hic? Animi, deserunt ratione. Nam repudiandae veritatis nesciunt, qui unde alias
+        assumenda!
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+    <style>
+        /* child selector*/
+        /* .box:nth-child(2){
+            background-color: aqua;
+        }  */
+
+        /* first line selector*/
+        /* .box::first-line{
+            color: rgb(9, 211, 234);
+        } */
+
+        /* .boxes *{
+            color: blueviolet;
+            border: 2px solid grey;
+            margin: 2px;
+        } */
+
+        /* attribute selector */
+        /* [data-color="secondary"] {
+            margin-top: 29px;
+        } */
+  
+        /* .box:nth-child(even) {
+            background-color: rgb(255, 177, 8);
+        } */
+
+        /* .box:nth-last-child(2) {
+            background-color: rgb(8, 210, 255);
+        } */
+
+        /* Before and after property */
+        /* .box::before{
+            content: "wow what a color ";
+            font-size: 26px;
+            display: block;
+        }
+        .box::after{
+            content: "wow what a color ";
+            font-size: 26px;
+            display: block;
+        } */
+
+        ::selection {
+            background-color: rgb(0, 221, 255);
+            color: rgb(241, 7, 7);
+        }
+
+        .box::first-letter {
+            color: red;
+            font-size: 30px;
+        }
+
+        input::placeholder{
+            color: rgb(99, 1, 152);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+
+        <div class="box">Hey I am a Box Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt totam, explicabo illo ad, doloribus ex corrupti perferendis adipisci culpa, exercitationem a. Dolore architecto dicta quam nulla, quo facilis animi, vel dolorem eum veritatis maxime porro quas consectetur perspiciatis ab dignissimos, rem quidem eos optio. Commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quos voluptatibus quam commodi accusamus ab atque nam numquam quibusdam culpa. Placeat eligendi voluptatibus deserunt eum.</div>
+
+        <div data-color="secondary"  class="box">Hey I am a Box</div>
+
+        <div class="box">Hey I am a Box</div>
+
+        <div class="box">Hey I am a Box</div>
+
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .Box{
+            border: 2px solid red;
+            /* display: inline-block; */
+            margin: 30px;
+            padding: 30px;
+            width: 200px;
+            display: inline-flex; 
+            justify-content: center;
+        }
+
+        .Box1{
+            background-color: bisque;
+            /* display: none; */
+            /* visibility: hidden; */
+           }
+    </style>
+</head>
+<body>
+    <div class="Box Box1">
+        This is a Box
+    </div>
+    <div class="Box">
+        I am a good boy
+    </div>
+    <span>hello</span>
+    <span>everyone!</span>
+</body>
+</html>

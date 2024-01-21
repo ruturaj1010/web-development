@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float clear using CSS</title>
+    <style>
+        img{
+            float: left;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3){
+            background-color: aquamarine;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698624000&semt=ais" width="230" alt="this is an image">
+
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, similique ipsam. Assumenda enim deleniti perspiciatis cum quisquam maiores consequatur neque accusamus provident maxime, quam voluptas, dignissimos beatae totam quidem qui reprehen lorem150</div>
+
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam beatae sit, maiores mollitia vitae aperiam repellat at velit adipisci assumenda molestias atque molestiae sunt inventore quasi! Provident culpa cum cumque officia repellendus quas sapiente fuga nostrum consectetur nihil ab, dolores dolor unde in doloribus mollitia est sint aperiam autem, perferendis ducimus magnam optio! Itaque minus libero nemo quos corporis, laboriosam veniam enim voluptas numquam ipsum nesciunt tempora rerum esse asperiores, blanditiis illum dignissimos recusandae repellendus explicabo. Deleniti soluta culpa delectus libero repellat harum ipsum magnam reprehenderit ut maquasi laudantium. Pariatur impedit quaerat delectus recusandae modi quisquam laudantium dolorem tempore? Deleniti sed maxime harum unde saepe nostrum et?</div>
+        
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

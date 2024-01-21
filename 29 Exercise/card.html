@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card using html and css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card{
+            background-color: white;
+            width: 70mm;
+            height: 121mm;
+            border: 2px solid black;
+            border-radius: 7px;
+            margin: 4px ;
+        }
+
+        body {
+            background-color: grey;
+            border-radius: 10px;
+            padding:60px;
+            display: inline-flex;
+        }
+
+        img {
+            width: 66mm;
+            border-radius: 10px;
+            padding: 2px;
+            margin: 4px;
+            box-shadow: 0px 2px 2px rgb(112, 108, 108);
+        }
+
+        span {
+            padding:4px;
+            font-size: 10px;
+            font-family: sans-serif;
+            display: inline-block;
+            border: 1px solid chocolate;
+            border-radius: 15px;
+            color: rgb(255, 0, 170);
+        }
+
+        .eyesight {
+            margin: 1px 20px;
+        }
+
+        h2, p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 10px 10px;
+            overflow: auto;
+        }
+
+        p {
+            color: grey;
+            line-height: 1.3;
+            font-size: 14px;
+        }
+
+        .more {
+            text-align: center;
+        }
+
+        button{
+            border: 2px solid burlywood;
+            border-radius: 15px;
+            color: rgb(15, 128, 242);
+            background-color: rgb(170, 246, 246);
+            margin: 30px 40px;
+            padding: 5px;
+        }
+
+        button:hover{
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+                alt="This is an img">
+        </div>
+
+        <div class="eyesight">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="info">
+            <h2>Beautiful View</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet! Magnam esse, illum repellat dolor eos dolorum fugiat provident consequuntur, amet, debitis fuga. Et, suscipit.</p>
+        </div>
+
+        <div class="more">
+            <button class="button">Read more</button>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+                alt="This is an img">
+        </div>
+
+        <div class="eyesight">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="info">
+            <h2>Beautiful View</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, amet! Magnam esse, illum repellat dolor eos dolorum fugiat provident consequuntur, amet, debitis fuga. Et, suscipit.</p>
+        </div>
+
+        <div class="more">
+            <button class="button">Read more</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

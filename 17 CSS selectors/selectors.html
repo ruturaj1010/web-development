@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector */
+        div{
+            color: white;
+            background-color: red;
+        }
+        /* class selector */
+        .orange{
+            background-color: orange;
+        }
+        /* id selector */
+        #one{
+            background-color: rgb(150, 103, 195) ;
+        }
+        /* child selector */
+        div > p {
+            color: black;
+        }
+        /* descendent selector */
+        div p{
+            color: purple;
+        }
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited , a:hover {
+            color: darkred;
+        }
+        a:active {
+            background-color: rgb(4, 10, 11);
+        }
+
+        p:first-child {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="chil">
+        <p>this is first para</p>
+        <p>this is second para</p>
+    </main>
+    <div>
+        I am good boy
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet id </p>
+    </div>
+
+    <div class="orange">
+        I am bad boy
+        <article>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus unde aperiam excepturi esse modi totam fugiat doloremque reprehenderit doloribus dolor?</p>
+        </article>
+    </div>
+
+    <span id="one">I am span</span>
+
+    <a href="https:/www.google.com">click here to open google</a>
+
+</body>
+</html>

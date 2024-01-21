@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and i/o tags</title>
+</head>
+
+<body>
+    <h1>Form for Assistant Manager post</h1>
+    <form action="post">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your name" />
+        </div>
+
+        <div>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="male" name="gender" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <!-- give name to for as it is as name for id -->
+            <label for="information">Tell us about yourself</label>
+            <textarea name="about" id="information" cols="50" rows="3" placeholder="about yourself"></textarea>
+        </div>
+
+        <div>
+            <select name="agrrement">
+                <option value="select">select</option>
+                <option value="3 years">3 years</option>
+                <option value="5 years">5 years</option>
+                <option value="7 years">7 years</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="resume">Resume</label>
+            <input type="file" name="resume" >
+        </div>
+
+        <div>
+            <input type="checkbox" name="apply">
+            <label for="apply">Accept all terms and conditions</label>
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity in css</title>
+    <style>
+        /* specificity element selector 1 point */
+        h1{
+            color: blue;
+        }
+        /* specificity class selector 10 point */
+        .cred{
+            color: red;
+        }
+        /* specificity class selector 10 point */
+        .cpurple{
+            color: purple;
+        }
+        /* specificity class selector 10 point */
+        .corange{
+            color: orange;
+        }
+        /* specificity attribute selector 10 point */
+        [data-x=a]{
+            color: brown;
+        }
+        /* specificity id selector 100 point */
+        #one{
+            color:violet;
+        }
+
+        /* inline style has most specificity 1000 points */
+
+    </style>
+</head>
+<body>
+    <h1 class="cred cpurple corange" id="one" data-x="a">This is  proper h1 tag</h1>
+</body>
+</html>

@@ -1,0 +1,24 @@
+*{
+    background-color: bisque;
+}
+
+h1{
+    color: blueviolet;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+#video {
+    padding: 50px;
+    border-radius: 20px;
+}
+p,h1 {
+    text-align: center;
+}
+
+.music {
+    background-color: red;
+    padding: 10px;
+    border-radius: 100px;
+}
