@@ -9,9 +9,9 @@
         .container {
             border: 2px solid black;
             display: grid;
-            grid-template-areas: "nav nav nav"
-                                 "side article article"
-                                 "footer footer footer";
+            grid-template-areas: "aside nav nav nav"
+                                 "aside side article article"
+                                 "aside footer footer footer";
         }
 
         .item {
@@ -37,6 +37,12 @@
         .item4 {
             grid-area: footer;
             background-color: rgb(212, 255, 0);
+        }
+
+        .item5 {
+            grid-area: aside;
+            background-color: rgb(115, 0, 255);
+            height: auto;
         }
     </style>
 </head>
