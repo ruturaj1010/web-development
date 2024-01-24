@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations using css</title>
+    <style>
+        .container{
+            background-color: bisque;
+            width: 30vw;
+            height: 80vh;
+        }
+
+        .box{
+            /* background-color: rgb(225, 73, 53); */
+            width: 30px;
+            height: 50px;
+            /* animation: rutuAnimation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-direction: alternate-reverse; */
+            animation: rutuAnimation 3s 1s alternate-reverse infinite,
+                       rutuRotate 3s 1s alternate-reverse infinite;
+        }
+
+        @keyframes rutuAnimation {
+            from {
+                background-color: purple;
+            }
+            to {
+                background-color: aqua;
+                transform: translateX(200px);
+            }
+        }
+
+        @keyframes rutuRotate {
+            0% {
+                transform: rotate(60deg);
+            }
+            20% {
+                transform: rotate(120deg);
+            }
+            60% {
+                transform: rotate(180deg);
+            }
+            80% {
+                transform: rotate(240deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
