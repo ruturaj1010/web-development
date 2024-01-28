@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bounce Animation using CSS</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 70vh;
+            background-color: aqua;
+            position: relative;
+            margin: auto;
+        }
+
+        .ball {
+            width: 70px;
+            height: 70px;
+            border-radius: 50px;
+            background-color: rgb(255, 111, 0);
+            position: absolute;
+            bottom: 12px;
+            left: 0px;
+            animation: catchballX 4s linear infinite ,
+                       catchballY 1s ease-in-out alternate-reverse infinite;
+        }
+
+        @keyframes catchballX {
+            from{
+                left: 0%;
+            }
+            to{   
+                left: 100%;
+            }
+        }
+        @keyframes catchballY {
+            from{
+                bottom: 0%;
+            }
+            to{    
+                bottom: 100%;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="ball"> </div>
+    </div>
 </body>
 </html>
