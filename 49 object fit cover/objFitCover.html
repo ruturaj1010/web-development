@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Cover using css</title>
+    <style>
+        .container {
+            height: 534px;
+            width: 650px;
+            border: 2px solid red;
+            background-color: yellow;
+            background-image: url(https://i.pinimg.com/originals/1b/1d/e7/1b1de76a73037c6856a8e0e13637691d.png);
+            background-position: center center;
+        }
+
+        img {
+            height: 455px;
+            width: 400px;
+            object-fit: cover; /* Resize the image according to the container */
+            /* object-fit: contain; */
+            object-position: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://i.pinimg.com/originals/1b/1d/e7/1b1de76a73037c6856a8e0e13637691d.png" alt="This is an img"> -->
+        woww its amazing
+    </div>
+</body>
+</html>
