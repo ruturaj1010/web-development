@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bussiness name generator</title>
+</head>
+
+<body>
+    <h1>Go to inspect => console </h1>
+    <script>
+        
+        let first, second, third;
+
+        let rand_1 = Math.random()
+        if ( rand_1 < 0.33 ) {
+            first = "Crazy";
+        } else if ( rand_1 >= 0.33 && rand_1 < 0.66 ) {
+            first = "Amazing";
+        } else {
+            first = "Fire"
+        }
+
+        let rand_2 = Math.random()
+        if ( rand_2 < 0.33 ) {
+            second = "Engine";
+        } else if ( rand_2 >= 0.33 && rand_2 < 0.66 ) {
+            second = "foods";
+        } else {
+            second = "Garments"
+        }
+
+        let rand_3 = Math.random()
+        if ( rand_3 < 0.33 ) {
+            third = "Bros";
+        } else if ( rand_3 >= 0.33 && rand_3 < 0.66 ) {
+            third = "Limited";
+        } else {
+            third = "Hub"
+        }
+
+        console.log(`${first} ${second} ${third}`)
+
+    </script>
+
+</body>
+</html>
