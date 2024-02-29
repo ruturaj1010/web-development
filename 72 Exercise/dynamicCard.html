@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Dynamic card using js</title>
+    <style>
+        body{
+            margin: 1px;
+            padding: 0;
+        }
+
+        .card {
+            display: flex;
+            border: 2px solid;
+            padding: 1px;
+            width: 645px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 5px;
+        }
+
+        .imag img {
+            width: 155px;
+            height: 95px;
+            margin-right: 5px;
+        }
+
+        .text p {
+            font-size: larger;
+        }
+        
+        .imag {
+            position: relative;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 5px;
+            z-index: 10;
+            right: 10px;
+            background-color: rgb(29, 28, 28);
+            opacity: 0.9;
+            color: white;
+            border-radius: 3px;
+            padding: 2px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imag">
+                <img src="../attachments/wallpaper.jpg" alt="this is an img">
+                <div class="capsule">32.22</div>
+            </div>
+            <div class="text">
+                <p><b>Introduction to Backend | Sigma webdevelopment video #2</b></p>
+                <span> CodeWithHarry . 560000 views . 7 months ago</span>
+            </div>
+        </div>
+    </div>
+    <script src="dynamic_Card.js"></script>
+</body>
+
+</html>

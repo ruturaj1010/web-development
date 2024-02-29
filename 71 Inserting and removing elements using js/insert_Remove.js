@@ -17,6 +17,3 @@ console.log(document.querySelector(".box").innerHTML)
 
 let cont = document.querySelector(".container")
 cont.insertAdjacentHTML("afterbegin" , "<h1>I am inserted using adjacentHTML</h1>")
-
-
-/* 16:41*/
