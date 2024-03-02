@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced JavaScript Interview Quetions</title>
+</head>
+
+<body>
+    <button>Add Note</button>
+    <div class="note"></div>
+    <script>
+        // if ( localStorage.getItem( "name" ) ) {
+        //     a = localStorage.getItem( "name" )
+        //     document.write( "Welcome , " + a )
+        // } else {
+        //     let a = prompt( "Enter your name " )
+        //     localStorage.setItem( "name", a )
+        // }
+
+        function saveNoteToLoacalStorage ( note ) {
+            localStorage.setItem( "note", note )
+        }
+
+        let preNote = localStorage.getItem( "note" )
+        if ( preNote ) {
+            // document.write( preNote )
+            document.querySelector(".note").innerHTML = preNote
+        }
+
+        document.querySelector( "button" ).addEventListener( "click", () => {
+            let Note = prompt( "Enter your note" )
+            saveNoteToLoacalStorage( Note )
+            document.querySelector(".note").innerHTML = Note
+        } )
+
+    </script>
+</body>
+
+</html>
